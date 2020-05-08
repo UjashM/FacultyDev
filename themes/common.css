@@ -124,8 +124,8 @@ Primary use:    Common.css file used for styling header, footer and
     color: rgb(210,0,0);
 }
 .landing-page-image-wrapper {
-    background-size: cover;
-    height: 70%;
+    /*background-size: cover;
+    height: 70%;*/
     width: 100%;
 }
 
@@ -273,10 +273,6 @@ Primary use:    Common.css file used for styling header, footer and
 }
 
 @media only screen and (max-width: 600px) {
-    .landing-page-image-wrapper {
-        background-image: url('../assets/logos/covid-19-logo-xs.png');
-        height: 82.5vw;
-    }
     #landing-page-text-wrapper
     {   
         top: 15%;
@@ -309,10 +305,6 @@ Primary use:    Common.css file used for styling header, footer and
 }
 
 @media only screen and (min-width: 600px) {
-    .landing-page-image-wrapper {
-        background-image: url('../assets/logos/covid-10-logo-sm.png');
-        height: 64.7vw;
-    }
     #landing-page-text-wrapper
     {   
         top: 20%;
@@ -344,10 +336,6 @@ Primary use:    Common.css file used for styling header, footer and
 }
 
 @media only screen and (min-width: 768px) {
-    .landing-page-image-wrapper {
-        background-image: url('../assets/logos/covid-19-logo-md.png');
-        height: 49.8vw;
-    }
     #landing-page-text-wrapper
     {
         top: 22%;
@@ -389,10 +377,6 @@ Primary use:    Common.css file used for styling header, footer and
         width: 485px;
     }
     
-    .landing-page-image-wrapper {
-        background-image: url('../assets/logos/covid-19-logo-lg.png');
-        height: 42.5vw;
-    }
     #landing-page-text-wrapper
     {
         top: 50%;
@@ -410,10 +394,6 @@ Primary use:    Common.css file used for styling header, footer and
 }
 
 @media only screen and (min-width: 1192px) {
-    .landing-page-image-wrapper {
-        background-image: url('../assets/logos/covid-19-logo-xl.png');
-        height: 30.6vw;
-    }
     #landing-page-text-wrapper
     {
         top: 38%;

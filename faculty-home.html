@@ -7,18 +7,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
     <link rel="shortcut icon" href="https://www.albany.edu/sites/default/files/favicon_0.ico"
         type="image/vnd.microsoft.icon">
-    <link rel="stylesheet" href="themes/covid_common.css" />
+    <link rel="stylesheet" href="themes/common.css" />
     <link rel="stylesheet" href="themes/side-navigation.css" />
     <link rel="stylesheet" href="themes/custom-fonts.css" />
     <link rel="stylesheet" href="themes/footer.css" />
     <link rel="stylesheet" href="themes/bootstrap/css/bootstrap-grid.min.css" />
     <link rel="stylesheet" href="themes/bootstrap/css/bootstrap-reboot.min.css" />
     <link rel="stylesheet" href="themes/bootstrap/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="themes/home.css" />
-    <script src= "libraries/jquery/jquery-3.3.1.slim.js" async></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous" async></script>
-    <script src="libraries/bootstrap/js/bootstrap.min.js" async></script>
-    
     <title>
         HOME | University at Albany
     </title>
@@ -40,11 +35,30 @@
         </div>
     </header>
     <div class = "landing-page-image-wrapper">
-        <div id = "landing-page-text-wrapper">
-            <h1>COVID-19</h1>
-            <p>Research Guidance &amp;<br>
-                Funding Opportunities
-            </p>            
+        <div class="carousel slide carousel-fade pointer-event" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/images/0-Lab2.png" class="d-block w-100" alt="...">
+                  </div>
+              <div class="carousel-item">
+                <img src="assets/images/01-SPH.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/images/2-Chris.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/images/3-Ravi.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/images/4-Sanjay.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/images/5-Physics.png" class="d-block w-100" alt="...">
+              </div> 
+              <div class="carousel-item">
+                <img src="assets/images/6-Igor.png" class="d-block w-100" alt="...">
+              </div>             
+            </div>
         </div>
     </div>
     <section class="content-wrapper">
@@ -60,22 +74,22 @@
         <div class="display-flex">
             <div class="col-sm-12 col-md-5 col-lg-4 col-xl-3">
                 <ul id="navigation-bar">
-                    <li class="navigation-items hover-highlight" id = "active-page"><a href="covid-19.html">HOME</a></li>
-                    <li class="navigation-items hover-highlight"><a href="covid-19-research-guidance.html">MESSAGE &amp; GUIDANCE<i class="fas fa-chevron-down"></i></a></li>
+                    <li class="navigation-items hover-highlight" id = "active-page"><a href="faculty-home.html">HOME</a></li>
+                    <!--li class="navigation-items hover-highlight"><a href="covid-19-research-guidance.html">MESSAGE &amp; GUIDANCE<i class="fas fa-chevron-down"></i></a></li>
                     <li class="navigation-items hover-highlight"><a href="summary-guidance.html">FEDERAL GUIDANCE<i class="fas fa-chevron-down"></i></a></li>
                     <li class="navigation-items hover-highlight"><a href="federal-sponsors.html">FUNDING OPPORTUNITIES<i class="fas fa-chevron-down"></i></a></li>
                     <li class="navigation-items hover-highlight"><a href="covid-faculty.html">COVID-19 EXPERTS</a></li>
-                    <li class="navigation-items hover-highlight"><a href="FAQ.html">QUESTIONS<i class="fas fa-chevron-down"></i></a></li>
+                    <li class="navigation-items hover-highlight"><a href="FAQ.html">QUESTIONS<i class="fas fa-chevron-down"></i></a></li-->
                 </ul>
             </div>
             <div class="main-content col-sm-12 col-md-7 col-lg-8 col-xl-9">
                 <h1 class="content-header">
-                    HOME
+                    Advancing Research Excellence
                 </h1>
                 <p>
-                This COVID-19 Research Web Resource is aimed at informing our research community with a wide range of helpful and important information, resources, and funding opportunities to support your research and scholarship during the pandemic. This information includes, but is not limited to:  
+                    As an Carnegie R1 university, the University at Albany is a top-tier research institution advancing cutting-edge research and scholarship across its nine, schools and over forty research centers. The UAlbany Research Funding Navigator is a web-based platform that provides faculty scholars and researchers a wide array of resources and supports with the goal of succeeding in the pursuit of securing extramural sponsored funding for research and training, which is at the core of our public research university. ​
                 </p>
-                <div class = "display-flex">
+                <!--div class = "display-flex">
                     <div class = "col-xl-4 col-lg-6 col-md-12">
                     <a target = "_blank" href = "covid-19-research-guidance.html">
                     <div class = "home-logo-container">
@@ -125,7 +139,7 @@
                     </a>
                 </div>
                 
-            </div>
+            </div-->
             </div>
         </div>
         </div>
@@ -198,6 +212,9 @@
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WNRD5G" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
+    <script src= "libraries/jquery/jquery-3.3.1.slim.js"></script>
+    <script src="libraries/bootstrap/js/bootstrap.min.js"></script>
+    <script> $('.carousel').carousel({interval: 3000, pause: false})</script>
 </body>
 
 </html>
