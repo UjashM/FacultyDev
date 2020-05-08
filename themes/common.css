@@ -186,23 +186,24 @@ Primary use:    Common.css file used for styling header, footer and
 #landing-page-text-wrapper
 {
     background-color: rgb(0, 0, 0, 0.5);
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: 'TradeGothicLTStd-BdCn20', Helvetica, Arial, sans-serif;
     text-shadow: 3px 1px 2px black;
     left: 5%;
     padding: 10px 20px;
-    position: relative;
+    position: absolute;
 }
 
 #landing-page-text-wrapper>h1
 {
-    color:  #eeb211;
+    color:  white;
     text-transform: uppercase;
     font-weight: bold;
+    margin-bottom: 0px;
 }
 
 #landing-page-text-wrapper>p
 {
-    color: white;
+    color: #eeb211;
     margin-bottom: 0px;
     line-height: 1.15;
 }
@@ -379,8 +380,8 @@ Primary use:    Common.css file used for styling header, footer and
     
     #landing-page-text-wrapper
     {
-        top: 50%;
-        width: 40%;
+        top: 39%;
+        width: 55%;
     }
     #landing-page-text-wrapper>h1
     {
@@ -412,16 +413,16 @@ Primary use:    Common.css file used for styling header, footer and
 @media only screen and (min-width: 1300px) {
     #landing-page-text-wrapper
     {
-        top: 43%;
-        width: 40%;
+        top: 60%;
+        width: 45%;
     }
     #landing-page-text-wrapper>h1
     {
-        font-size: 4.3vw;
+        font-size: 3.2vw;
     }
     #landing-page-text-wrapper>p
     {
-        font-size: 3vw;
+        font-size: 1.8vw;
     }
 }
 
