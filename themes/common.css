@@ -351,7 +351,8 @@ Primary use:    Common.css file used for styling header, footer and
         font-size: 2.8vw;
     }
     .main-content>h1, .main-content>h2, .main-content>h3, .main-content>h4, .main-content>h5, .main-content>h6, .main-content>p, .main-content>div,
-    .main-content > .nav-tabs, .main-content > .nav-pills {
+    .main-content > .nav-tabs, .main-content > .nav-pills ,
+    .main-content > label, .main-content > select{
         margin-left: 50px;
     }
     section{
