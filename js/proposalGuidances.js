@@ -9,13 +9,28 @@ request.onload = function(){
     let headers_sort = ['Find information: News, Funding Opportunities, and Past Awards',
                         'Plan Your Proposal: Guidance and Resources',
                     'Draft Your Proposal: Section Instructions and Templates'];
+    let agencies_sort = ['National Science Foundation (NSF)​',
+    'National Institutes of Health (NIH)',
+    'U.S. Department of Defense (DoD)',
+    'U.S. Department of Energy (DOE)',
+    'U.S. Department of Education (ED)',
+    'National Aeronautics and Space Administration (NASA)',
+    'National Oceanic and Atmospheric Administration (NOAA)',
+    'National Endowment for the Arts (NEA)',
+    'National Endowment for the Humanities (NEH)',
+    'National Institute of Justice (NIJ)',
+    'Substance Abuse and Mental Health Services Administration (SAMHSA)',
+    'U.S. Department of Agriculture (USDA)'
+]
     let content = '';
     const proposalGuidances = request.response;
     let accordionCounter = 1;
     //condition for checking if browser is Internet Explorer
     let proposalGuidance =  ((false || !!document.documentMode))? JSON.parse(proposalGuidances): proposalGuidances;
     let distinctAgencies = getDistinctAttributes(proposalGuidance, 'agency');
+    distinctAgencies = customSort(agencies_sort, distinctAgencies);
     createDropDownOptions(distinctAgencies);
+   
     
     for(let i = 0; i< distinctAgencies.length; i++)
     {
