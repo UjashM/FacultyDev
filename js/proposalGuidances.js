@@ -6,6 +6,9 @@ request.open('GET', requestURL);
 request.responseType = 'json';
 request.send();
 request.onload = function(){
+    let headers_sort = ['Find information: News, Funding Opportunities, and Past Awards',
+                        'Plan Your Proposal: Guidance and Resources',
+                    'Draft Your Proposal: Section Instructions and Templates'];
     let content = '';
     const proposalGuidances = request.response;
     let accordionCounter = 1;
@@ -23,6 +26,7 @@ request.onload = function(){
         
         let distinctHeaders = getDistinctAttributes(agencyGuidance, 'mainheader');
         let accordionElemContent = '';
+        distinctHeaders = customSort(headers_sort, distinctHeaders);
         distinctHeaders.forEach(function(header) {
            
            let mainGuidances = agencyGuidance.filter(function(guidance){
