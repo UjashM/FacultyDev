@@ -281,7 +281,7 @@ Primary use:    Common.css file used for styling header, footer and
 .nav-item{
     margin-right: 20px;
     margin-bottom: 10px;
-    width: 90px;
+    width: 100px;
     text-align: center;
 }
 
